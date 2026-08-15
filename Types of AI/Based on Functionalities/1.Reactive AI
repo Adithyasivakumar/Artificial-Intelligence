@@ -1,0 +1,14 @@
+This is the most basic form of AI. Think of it as having **no memory and no concept of the past or future**. It only sees the present moment and reacts to it based on a pre-programmed set of rules.
+
+- **Analogy:** Playing a game of air hockey. You don't think about the last goal you scored or the one you might score next. Your brain is focused on one thing: "Where is the puck *right now* and how do I hit it?" Every action is a direct reaction to the current situation.
+- **How it Works:** The IBM Deep Blue chess computer didn't "learn" from playing Garry Kasparov. In any given moment, it analyzed the current board position, calculated all possible future moves, and chose the one that gave it the highest chance of winning. Once it made its move, it "forgot" everything and started the process fresh on the new board position. It's a pure calculation machine with no stored memory of the past.
+
+### **Reactive AI**
+
+- **Definition:** The simplest AI that reacts to current situations based on pre-programmed rules.
+- **Core Idea:** No memory. It only sees the present moment.
+- **Characteristics:**
+    - Cannot learn from past experiences.
+    - Responses are fixed and predictable.
+    - Designed for a single, specific task.
+- **Examples:** IBM's Deep Blue (chess), early spam filters, simple rule-based chatbots

@@ -1,0 +1,14 @@
+This is where most of the AI we use today fits. These systems can **look into the recent past to make better decisions in the present**. They have a short-term or temporary memory.
+
+- **Analogy:** Driving a car. To drive safely, you can't just react to what's in front of you at this exact second. You need to remember the speed of the car that was just ahead of you, where the pedestrian was a moment ago, and the traffic patterns you've observed over the last few minutes. This recent historical data informs your current decisions.
+- **How it Works:** A self-driving car uses data from its sensors to track the speed and direction of other cars around it, which is a form of memory. When you talk to a chatbot, it remembers the last few things you said in the conversation to maintain context. However, this memory is usually short-lived. The self-driving car doesn't remember your drive from last week, and the chatbot typically forgets your conversation once you close the window.
+
+### **Limited Memory AI**
+
+- **Definition:** AI that uses historical data and past experiences to make current decisions.
+- **Core Idea:** Uses short-term memory to understand context.
+- **Characteristics:**
+    - Learns from data during a "training" phase.
+    - Can adapt its responses based on recent events.
+    - Memory is temporary and not persistent long-term.
+- **Examples:** Self-driving cars, image recognition, modern chatbots, recommendation systems (Netflix, YouTube).
