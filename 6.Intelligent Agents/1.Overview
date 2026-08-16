@@ -1,0 +1,23 @@
+### **Level 1: Large Language Models (LLMs)** (1:04)
+
+- **Definition:** Applications like *ChatGPT*, *Gemini*, and *Claude* that are highly proficient at generating and editing text.
+- **Core Limitations:** These models are **passive** (they wait for human input) and lack access to private, real-time, or proprietary data unless specifically provided in the prompt.
+
+### **Level 2: AI Workflows** (2:17)
+
+- **Definition:** Systems that integrate LLMs with external tools to perform specific tasks. This is often called *Retrieval Augmented Generation (RAG)*.
+- **Key Trait:** They follow a **predefined path** is called as "**control logic**" programmed by a human. For example, a workflow can be set to check a calendar before answering a question (3:49).
+- **Constraint:** These workflows are rigid; if a user query falls outside the pre-programmed steps, the system fails to provide an answer.
+
+### **Level 3: AI Agents** (5:26)
+
+- **Definition:** Advanced systems where the **LLM** becomes the **active decision-maker**, replacing the human to manage the process flow.
+- **The ReAct Framework:** Agents rely on two primary actions:
+    1. **Reasoning:** Determining the most efficient plan to achieve a goal (5:39).
+    2. **Acting:** Using tools to execute that plan autonomously (5:51).
+- **Iterative Ability:** Unlike workflows, agents can observe their results, critique their own performance against goals, and refine their actions until the output meets the desired criteria (7:03).
+
+### **Real-World Examples**
+
+- **Workflow Example (4:12):** A system built with *make.com* that compiles links to news articles, summarizes them with *Perplexity*, and drafts social media posts, all triggered by a fixed schedule.
+- **Agent Example (7:48):** *Andrew Ng’s* vision agent demo, which can autonomously analyze video footage, identify specific subjects (like a skier), and index clips without manual human tagging.
