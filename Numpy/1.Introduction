@@ -1,0 +1,104 @@
+## What is NumPy?
+
+- **NumPy = Numerical Python**
+- A Python library used for **numerical computing and working with arrays**.
+- Commonly used in:
+    - Data Science
+    - Machine Learning
+    - Deep Learning
+
+---
+
+## Why use NumPy?
+
+Compared with normal Python lists, NumPy provides:
+
+- Faster numerical operations
+- Efficient memory usage
+- Easy mathematical operations on entire arrays without explicitly writing for loops
+- Support for multi-dimensional arrays
+
+### Example
+
+```python
+arr = np.array([1, 2, 3, 4])
+
+print(arr * 2)
+```
+
+Output:
+
+```python
+[2 4 6 8]
+```
+
+No loop is required.
+
+---
+
+## Important Term
+
+### ndarray : stands for **N-dimensional array**.
+
+It is NumPy's main data structure for storing arrays.
+
+```python
+arr = np.array([1, 2, 3])
+
+print(type(arr))
+```
+
+Output:
+
+```python
+<class 'numpy.ndarray'>
+```
+
+---
+
+## ⭐ Interview Questions
+
+**Q: What is NumPy?**
+
+> NumPy is a Python library used for numerical computing. It provides efficient arrays and mathematical operations and is widely used in Data Science and Machine Learning.
+> 
+
+**Q: Why is NumPy preferred over Python lists for numerical operations?**
+
+> NumPy provides faster and more memory-efficient numerical operations and allows operations to be performed directly on entire arrays.
+> 
+
+**Q: What is ndarray?**
+
+> ndarray is NumPy's N-dimensional array data structure.
+> 
+
+---
+
+### Must Remember
+
+```
+NumPy → Numerical computing
+np.array() → Creates a NumPy array
+ndarray → NumPy's main array structure
+Vectorization → Operations on entire arrays
+```
+
+---
+
+**1. The Need for NumPy**
+
+- **Limitations of Python Lists:** While lists are common for storing multiple values, they are slow for heavy numerical computing and cannot easily handle multi-dimensional data (0:45-1:45).
+- **Limitations of Python Arrays:** The **built-in array module** supports only one-dimensional data and requires consistent data types, which is restrictive for complex tasks (1:40-2:25).
+- **The NumPy Advantage:** NumPy allows for **n-dimensional arrays** and is built on highly optimized **C code**, making it significantly faster and more performant for large-scale mathematical operations (4:15-4:45).
+
+**2. Key Features**
+
+- **Numerical Computing:** It is the backbone of major data science libraries like ***Pandas*** and ***Scikit-learn*** (5:00-5:15).
+- **Flexibility:** Unlike standard Python, NumPy supports matrices and cubes (multi-dimensional arrays) seamlessly (3:40-3:55).
+
+**3. Performance Demonstration (5:30-9:15)**
+
+- A comparison between standard Python lists and NumPy arrays by performing addition on lists containing 100 million elements.
+- **Results:** Standard Python lists took significantly longer (approximately 55 seconds) due to loop overhead and memory handling, whereas the NumPy operation completed much faster (approximately 15 seconds) (9:00-9:05).
+- **Conclusion:** The speed difference is drastic, confirming that NumPy is essential for processing large datasets efficiently.
