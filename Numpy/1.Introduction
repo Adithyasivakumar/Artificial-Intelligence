@@ -1,7 +1,9 @@
 ## What is NumPy?
 
 - **NumPy = Numerical Python**
+
 - A Python library used for **numerical computing and working with arrays**.
+
 - Commonly used in:
     - Data Science
     - Machine Learning
@@ -61,17 +63,14 @@ Output:
 **Q: What is NumPy?**
 
 > NumPy is a Python library used for numerical computing. It provides efficient arrays and mathematical operations and is widely used in Data Science and Machine Learning.
-> 
 
 **Q: Why is NumPy preferred over Python lists for numerical operations?**
 
 > NumPy provides faster and more memory-efficient numerical operations and allows operations to be performed directly on entire arrays.
-> 
 
 **Q: What is ndarray?**
 
 > ndarray is NumPy's N-dimensional array data structure.
-> 
 
 ---
 
