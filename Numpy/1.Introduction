@@ -100,4 +100,4 @@ Vectorization → Operations on entire arrays
 
 - A comparison between standard Python lists and NumPy arrays by performing addition on lists containing 100 million elements.
 - **Results:** Standard Python lists took significantly longer (approximately 55 seconds) due to loop overhead and memory handling, whereas the NumPy operation completed much faster (approximately 15 seconds) (9:00-9:05).
-- **Conclusion:** The speed difference is drastic, confirming that NumPy is essential for processing large datasets efficiently.
+- **Conclusion:** The speed difference is drastic, confirming that NumPy is essential for processing large datasets efficiently. 
