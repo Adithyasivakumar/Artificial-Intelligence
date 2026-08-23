@@ -1,0 +1,110 @@
+**NumPy into real-world ML work**.
+
+## 1. Storing Data
+
+Data can be represented as NumPy arrays.
+
+```python
+X = np.array([
+    [1, 2],
+    [3, 4],
+    [5, 6]
+])
+```
+
+Here, you can think of:
+
+- Rows → data samples
+- Columns → features
+
+---
+
+## 2. Mathematical Operations
+
+NumPy is commonly used for calculations on data.
+
+```python
+X * 2
+X + 10
+np.mean(X)
+np.max(X)
+```
+
+This is useful during **data preprocessing and analysis**.
+
+---
+
+## 3. Data Preprocessing
+
+NumPy can be used to:
+
+- Filter data
+- Replace values
+- Calculate statistics
+- Reshape data
+- Normalize/transform values
+
+For example:
+
+```python
+X = np.array([10, 20, 30, 40])
+
+X = X / 40
+```
+
+Result:
+
+```python
+[0.25 0.5  0.75 1.  ]
+```
+
+---
+
+## 4. Working with Other ML Libraries
+
+NumPy works closely with popular libraries such as:
+
+- **Pandas**
+- **Scikit-learn**
+- **TensorFlow**
+- **PyTorch**
+
+For example, many ML libraries accept or return NumPy arrays.
+
+```python
+data = np.array([[1, 2], [3, 4]])
+```
+
+You may pass this data to a machine-learning model.
+
+---
+
+## 5. Why NumPy is Important in ML
+
+The main reason is:
+
+> **ML involves a lot of numerical data and mathematical operations, and NumPy provides an efficient way to work with that data.**
+> 
+
+---
+
+## ⭐ Interview Question
+
+**Q: How is NumPy used in Machine Learning?**
+
+> NumPy is used to store and manipulate numerical data, perform mathematical operations, reshape data, and support preprocessing. It also works as a foundation for many Python Data Science and ML libraries.
+> 
+
+### Must Remember
+
+```
+NumPy
+  ↓
+Numerical data
+  ↓
+Array operations
+  ↓
+Preprocessing / calculations
+  ↓
+Machine Learning
+```

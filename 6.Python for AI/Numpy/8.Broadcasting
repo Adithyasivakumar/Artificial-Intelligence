@@ -1,0 +1,96 @@
+### What is Broadcasting?
+
+**Broadcasting** allows NumPy to perform operations between arrays of **different shapes** when their shapes are compatible.
+
+In simple terms:
+
+> NumPy automatically adjusts smaller arrays so that operations can be performed with larger arrays.
+> 
+
+---
+
+## Example 1 — Array + Number
+
+```python
+arr = np.array([1, 2, 3])
+
+arr + 10
+```
+
+Output:
+
+```python
+[11 12 13]
+```
+
+NumPy effectively applies `10` to every element.
+
+---
+
+## Example 2 — Arrays of Different Shapes
+
+```python
+arr = np.array([1, 2, 3])
+num = 10
+
+arr + num
+```
+
+Result:
+
+```python
+[11 12 13]
+```
+
+This is broadcasting.
+
+---
+
+## Example 3 — 2D Array
+
+```python
+arr = np.array([
+    [1, 2, 3],
+    [4, 5, 6]
+])
+
+arr + np.array([10, 20, 30])
+```
+
+Result:
+
+```python
+[[11 22 33]
+ [14 25 36]]
+```
+
+The `[10, 20, 30]` is applied to **each row**.
+
+---
+
+## Why is Broadcasting Useful?
+
+It allows you to perform operations on arrays **without manually repeating values or writing loops**.
+
+This is very common in:
+
+- Data preprocessing
+- Machine Learning
+- Mathematical calculations
+
+---
+
+## ⭐ Interview Question
+
+**Q: What is broadcasting in NumPy?**
+
+> Broadcasting is NumPy's ability to perform operations between arrays of compatible shapes by automatically expanding the smaller array to match the larger array.
+> 
+
+### Must Remember
+
+```
+Broadcasting → operations between compatible different-shaped arrays
+No explicit loop required
+Very common in NumPy and ML
+```

@@ -1,0 +1,107 @@
+This is a **small but important** concept, especially when working with 2D data.
+
+## 1. What is Aggregation?
+
+Aggregation means **reducing multiple values into a single result**.
+
+Common aggregation functions:
+
+```python
+np.sum()
+np.mean()
+np.min()
+np.max()
+```
+
+Example:
+
+```python
+arr = np.array([10, 20, 30])
+
+np.sum(arr)    # 60
+np.mean(arr)   # 20
+np.max(arr)    # 30
+```
+
+---
+
+## 2. What is `axis`?
+
+`axis` tells NumPy **which direction to perform the operation**.
+
+Consider:
+
+```python
+arr = np.array([
+    [1, 2, 3],
+    [4, 5, 6]
+])
+```
+
+Think:
+
+```python
+     Col
+      ↓
+1  2  3
+4  5  6
+```
+
+### `axis=0` → Down the rows
+
+```python
+np.sum(arr, axis=0)
+```
+
+Result:
+
+```python
+[5 7 9]
+```
+
+It calculates:
+
+```python
+1+4 = 5
+2+5 = 7
+3+6 = 9
+```
+
+### `axis=1` → Across the columns
+
+```python
+np.sum(arr, axis=1)
+```
+
+Result:
+
+```python
+[6 15]
+```
+
+It calculates:
+
+```python
+1+2+3 = 6
+4+5+6 = 15
+```
+
+---
+
+## ⭐ Easy Way to Remember
+
+For a 2D array:
+
+```python
+axis=0 → operate vertically → column-wise result
+axis=1 → operate horizontally → row-wise result
+```
+
+### Interview Question
+
+**Q: What does `axis` mean in NumPy?**
+
+> `axis` specifies the direction along which an operation should be performed.
+> 
+
+**Most important:** Remember `axis=0` and `axis=1`.

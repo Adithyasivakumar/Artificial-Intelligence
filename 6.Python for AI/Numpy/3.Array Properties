@@ -1,0 +1,88 @@
+## 1. `shape`
+
+Tells you the **size of the array along each dimension**.
+
+```python
+arr = np.array([[1, 2, 3],
+                [4, 5, 6]])
+
+arr.shape
+# (2, 3)
+```
+
+**Meaning:** 2 rows × 3 columns.
+
+---
+
+## 2. `ndim`
+
+Tells you the **number of dimensions**.
+
+```python
+arr.ndim
+# 2
+```
+
+Examples:
+
+- `[1, 2, 3]` → 1D
+- `[[1, 2], [3, 4]]` → 2D
+- More nested levels → higher dimensions
+
+---
+
+## 3. `size`
+
+Tells you the **total number of elements**.
+
+```
+arr.size
+# 6
+```
+
+For a `(2, 3)` array:
+
+**2 × 3 = 6 elements**
+
+---
+
+## 4. `dtype`
+
+Tells you the **data type of the elements**.
+
+```
+arr.dtype
+# int64
+```
+
+The exact integer type can vary depending on the system.
+
+---
+
+## ⭐ Must Remember
+
+| Property | Meaning |
+| --- | --- |
+| `shape` | Size of each dimension |
+| `ndim` | Number of dimensions |
+| `size` | Total number of elements |
+| `dtype` | Data type of elements |
+
+### Simple Interview Question
+
+**Q: What is the difference between `shape`, `ndim`, and `size`?**
+
+> `ndim` tells the number of dimensions, `shape` tells the shape of the array, and `size` tells the total number of elements.
+> 
+
+### Example
+
+```python
+arr = np.array([[1, 2, 3],
+                [4, 5, 6]])
+
+print(arr.shape)   # (2, 3)
+print(arr.ndim)    # 2
+print(arr.size)    # 6
+print(arr.dtype)   # integer type
+```

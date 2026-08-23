@@ -1,0 +1,117 @@
+**Reshaping** means changing the structure/dimensions of an array **without changing its elements**.
+
+This is very common in **Machine Learning**, especially when preparing data for models.
+
+---
+
+## 1. `reshape()`
+
+Used to change the shape of an array.
+
+```python
+arr = np.array([1, 2, 3, 4, 5, 6])
+
+arr.reshape(2, 3)
+```
+
+Result:
+
+```python
+[[1 2 3]
+ [4 5 6]]
+```
+
+The original array has **6 elements**, so the new shape must also contain **6 elements**.
+
+```python
+2 × 3 = 6
+```
+
+---
+
+## 2. Important Rule
+
+The total number of elements must remain the same.
+
+✅ Valid:
+
+```python
+arr.reshape(3, 2)
+```
+
+❌ Invalid:
+
+```python
+arr.reshape(4, 2)
+```
+
+Because:
+
+```python
+4 × 2 = 8 ≠ 6
+```
+
+---
+
+## 3. `1` in `reshape()`
+
+NumPy can automatically calculate one dimension.
+
+```python
+arr.reshape(2, -1)
+```
+
+NumPy understands that the remaining dimension should be `3`.
+
+Result:
+
+```python
+[[1 2 3]
+ [4 5 6]]
+```
+
+This is commonly used in ML code.
+
+---
+
+## 4. `flatten()`
+
+Converts a multi-dimensional array into a **1D array**.
+
+```python
+arr = np.array([
+    [1, 2, 3],
+    [4, 5, 6]
+])
+
+arr.flatten()
+```
+
+Result:
+
+```python
+[1 2 3 4 5 6]
+```
+
+For now, just remember what `flatten()` does. The difference between `flatten()` and `ravel()` is not necessary for your current level.
+
+---
+
+## ⭐ Must Remember
+
+```
+reshape() → change array shape
+-1        → let NumPy calculate that dimension
+flatten() → convert to 1D
+```
+
+### Interview Question
+
+**Q: What is `reshape()` in NumPy?**
+
+> `reshape()` changes the dimensions or shape of an array without changing the number of elements.
+> 
+
+**Key rule:**
+
+`old total elements = new total elements`

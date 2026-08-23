@@ -1,0 +1,115 @@
+## 1. `np.sum()`
+
+Calculates the sum.
+
+```python
+np.sum([1, 2, 3])
+# 6
+```
+
+---
+
+## 2. `np.mean()`
+
+Calculates the average.
+
+```python
+np.mean([10, 20, 30])
+# 20.0
+```
+
+---
+
+## 3. `np.min()` and `np.max()`
+
+Find the minimum and maximum values.
+
+```python
+np.min([10, 20, 5])
+# 5
+
+np.max([10, 20, 5])
+# 20
+```
+
+---
+
+## 4. `np.unique()`
+
+Returns the **unique values** in an array.
+
+```python
+arr = np.array([1, 2, 2, 3, 3, 3])
+
+np.unique(arr)
+```
+
+Output:
+
+```
+[1 2 3]
+```
+
+Useful for checking distinct values in data.
+
+---
+
+## 5. `np.sort()`
+
+Sorts an array.
+
+```python
+arr = np.array([30, 10, 20])
+
+np.sort(arr)
+```
+
+Output:
+
+```
+[10 20 30]
+```
+
+---
+
+## 6. `np.where()`
+
+We already saw this. It is useful for **conditional selection/replacement**.
+
+```python
+np.where(arr > 20, 1, 0)
+```
+
+---
+
+## 7. `np.concatenate()`
+
+Combines arrays.
+
+```python
+a = np.array([1, 2])
+b = np.array([3, 4])
+
+np.concatenate((a, b))
+```
+
+Output:
+
+```
+[1 2 3 4]
+```
+
+---
+
+## ⭐ What You Actually Need to Remember
+
+| Function | Purpose |
+| --- | --- |
+| `np.sum()` | Sum |
+| `np.mean()` | Average |
+| `np.min()` | Minimum |
+| `np.max()` | Maximum |
+| `np.unique()` | Unique values |
+| `np.sort()` | Sort values |
+| `np.where()` | Conditional selection |
+| `np.concatenate()` | Combine arrays |

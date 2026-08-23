@@ -1,0 +1,110 @@
+### What is **Boolean Indexing**?
+
+Boolean indexing allows you to **select elements based on a condition**.
+
+This is useful for filtering data.
+
+---
+
+## Basic Example
+
+```python
+arr = np.array([10, 20, 30, 40, 50])
+
+arr > 25
+```
+
+Output:
+
+```python
+[False False  True  True  True]
+```
+
+This creates a **Boolean array**.
+
+You can use it to filter the values:
+
+```python
+arr[arr > 25]
+```
+
+Output:
+
+```python
+[30 40 50]
+```
+
+---
+
+## Multiple Conditions
+
+Use:
+
+- `&` → AND
+- `|` → OR
+- `~` → NOT
+
+Example:
+
+```python
+arr[(arr > 20) & (arr < 50)]
+```
+
+Output:
+
+```python
+[30 40]
+```
+
+### Important
+
+With NumPy, use `&` and `|` instead of Python's `and` and `or` for element-wise conditions.
+
+---
+
+## `np.where()`
+
+`np.where()` is useful for selecting values based on a condition.
+
+```python
+arr = np.array([10, 20, 30, 40])
+
+np.where(arr > 25, 1, 0)
+```
+
+Output:
+
+```python
+[0 0 1 1]
+```
+
+Meaning:
+
+```
+condition true  → 1
+condition false → 0
+```
+
+---
+
+## ⭐ Must Remember
+
+```
+arr[condition]       → filter elements
+&                    → AND
+|                    → OR
+np.where()           → choose values based on condition
+```
+
+### Interview Question
+
+**Q: How do you filter elements in a NumPy array?**
+
+> We can use Boolean indexing by creating a condition and passing it inside the array's brackets.
+> 
+
+Example:
+
+```python
+arr[arr > 25]
+```

@@ -1,0 +1,145 @@
+**Indexing** is used to access individual elements.
+
+**Slicing** is used to access a range of elements.
+
+These are important because you'll frequently use them when working with datasets.
+
+---
+
+## 1. Indexing — 1D Array
+
+NumPy uses **zero-based indexing**.
+
+```python
+arr = np.array([10, 20, 30, 40])
+```
+
+```python
+arr[0]   # 10
+arr[2]   # 30
+```
+
+Negative indexing also works:
+
+```python
+arr[-1]  # 40
+```
+
+---
+
+## 2. Indexing — 2D Array
+
+For a 2D array:
+
+```python
+arr = np.array([
+    [1, 2, 3],
+    [4, 5, 6]
+])
+```
+
+Use:
+
+```python
+arr[row, column]
+```
+
+Examples:
+
+```python
+arr[0, 1]   # 2
+arr[1, 2]   # 6
+```
+
+---
+
+## 3. Slicing
+
+Syntax:
+
+```python
+arr[start:stop]
+```
+
+`stop` is **not included**.
+
+```python
+arr = np.array([10, 20, 30, 40, 50])
+
+arr[1:4]
+```
+
+Output:
+
+```python
+[20 30 40]
+```
+
+You can also use:
+
+```python
+arr[:3]     # First 3 elements
+arr[2:]     # From index 2 to the end
+arr[::2]    # Every 2nd element
+```
+
+---
+
+## 4. Slicing 2D Arrays
+
+For a 2D array:
+
+```python
+arr = np.array([
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+])
+```
+
+### Get a row
+
+```python
+arr[0]
+```
+
+```python
+[1 2 3]
+```
+
+### Get a column
+
+```python
+arr[:, 1]
+```
+
+```python
+[2 5 8]
+```
+
+Here:
+
+- `:` → all rows
+- `1` → column index 1
+
+---
+
+## ⭐ Must Remember
+
+```
+arr[index]          → access element
+arr[row, column]    → access 2D element
+arr[start:stop]     → slice
+arr[:, column]      → select a column
+arr[row, :]         → select a row
+```
+
+### Interview Question
+
+**Q: How do you access the second row and third column of a NumPy array?**
+
+```python
+arr[1, 2]
+```
+
+Because indexing starts from `0`.

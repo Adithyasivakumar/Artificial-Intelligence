@@ -1,0 +1,101 @@
+NumPy allows you to perform **mathematical operations directly on arrays**. This is one of its main advantages.
+
+## 1. Arithmetic Operations
+
+Operations are usually performed **element-wise**.
+
+```python
+a = np.array([1, 2, 3])
+b = np.array([4, 5, 6])
+```
+
+```python
+a + b    # [5  7  9]
+a - b    # [-3 -3 -3]
+a * b    # [4 10 18]
+a / b    # [0.25 0.4  0.5]
+```
+
+**Important:** `a * b` is element-wise multiplication, not matrix multiplication.
+
+---
+
+## 2. Operations with a Single Number
+
+You can perform an operation on the **entire array**.
+
+```python
+a = np.array([1, 2, 3])
+
+a + 10    # [11 12 13]
+a * 2     # [2 4 6]
+```
+
+This is called **vectorization**.
+
+Instead of writing a loop, NumPy performs the operation on the whole array.
+
+---
+
+## 3. Comparison Operations
+
+You can compare every element with a value.
+
+```python
+a = np.array([10, 20, 30, 40])
+
+a > 20
+```
+
+Output:
+
+```python
+[False False  True  True]
+```
+
+This becomes particularly useful for **filtering data**, which we'll cover later.
+
+---
+
+## 4. Common Mathematical Functions
+
+NumPy provides functions for common calculations:
+
+```python
+np.sum(a)
+np.mean(a)
+np.min(a)
+np.max(a)
+np.std(a)
+```
+
+Example:
+
+```python
+a = np.array([10, 20, 30])
+
+np.sum(a)     # 60
+np.mean(a)    # 20
+np.min(a)     # 10
+np.max(a)     # 30
+```
+
+Don't worry about memorizing every NumPy function. These basic ones are enough for now.
+
+---
+
+## ⭐ Must Remember
+
+- NumPy operations are generally **element-wise**.
+- You can perform operations on an entire array without explicit loops.
+- This is called **vectorization**.
+- → element-wise multiplication.
+- `@` → matrix multiplication (we'll cover this separately).
+- Comparison operations produce **Boolean arrays**.
+
+### Interview Question
+
+**Q: What is vectorization in NumPy?**
+
+> Vectorization is performing an operation on an entire NumPy array without explicitly writing a Python loop. It makes numerical operations simpler and generally faster.
+>
